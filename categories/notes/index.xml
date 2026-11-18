@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Notes on Technical Notes</title><link>/categories/notes/</link><description>Recent content in Notes on Technical Notes</description><generator>Hugo -- gohugo.io</generator><language>en-au</language><lastBuildDate>Sun, 12 Mar 2023 12:18:59 +0000</lastBuildDate><atom:link href="/categories/notes/index.xml" rel="self" type="application/rss+xml"/><item><title>Template Type Deduction</title><link>/p/template-type-deduction/</link><pubDate>Sun, 12 Mar 2023 12:18:59 +0000</pubDate><guid>/p/template-type-deduction/</guid><description>&lt;h2 id="first-lets-distinguish-different-cases-of-const">First, let&amp;rsquo;s distinguish different cases of const
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Notes on Technical Notes</title><link>https://vulpsecula.com/categories/notes/</link><description>Recent content in Notes on Technical Notes</description><generator>Hugo -- gohugo.io</generator><language>en-au</language><lastBuildDate>Sun, 12 Mar 2023 12:18:59 +0000</lastBuildDate><atom:link href="https://vulpsecula.com/categories/notes/index.xml" rel="self" type="application/rss+xml"/><item><title>Template Type Deduction</title><link>https://vulpsecula.com/p/template-type-deduction/</link><pubDate>Sun, 12 Mar 2023 12:18:59 +0000</pubDate><guid>https://vulpsecula.com/p/template-type-deduction/</guid><description>&lt;h2 id="first-lets-distinguish-different-cases-of-const">First, let&amp;rsquo;s distinguish different cases of const
 &lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -203,7 +203,7 @@
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>This type includes the array&amp;rsquo;s size. In this example, &lt;code>T&lt;/code> is deduced as &lt;code>const char[13]&lt;/code>, and the type of &lt;code>f&lt;/code>&amp;rsquo;s parameter (reference to this array) is &lt;code>const char (&amp;amp;)[13]&lt;/code>&lt;/p>
-&lt;p>But since you&amp;rsquo;re writing in C++, it&amp;rsquo;s recommended to use array instead&amp;hellip;.&lt;/p></description></item><item><title>C++ RAII</title><link>/p/c-raii/</link><pubDate>Wed, 22 Feb 2023 12:18:59 +0000</pubDate><guid>/p/c-raii/</guid><description>&lt;p>RAII(Resource Acquisition Is Initialization) is a C++ programming idiom that ties resource management to object lifetime.&lt;/p>
+&lt;p>But since you&amp;rsquo;re writing in C++, it&amp;rsquo;s recommended to use array instead&amp;hellip;.&lt;/p></description></item><item><title>C++ RAII</title><link>https://vulpsecula.com/p/c-raii/</link><pubDate>Wed, 22 Feb 2023 12:18:59 +0000</pubDate><guid>https://vulpsecula.com/p/c-raii/</guid><description>&lt;p>RAII(Resource Acquisition Is Initialization) is a C++ programming idiom that ties resource management to object lifetime.&lt;/p>
 &lt;h2 id="when-objects-should-not-be-stack-allocated">When Objects Should Not Be Stack-Allocated
 &lt;/h2>&lt;p>Objects should be heap-allocated when:&lt;/p>
 &lt;ul>
@@ -213,10 +213,10 @@
 &lt;/ul>
 &lt;h2 id="resource-management">Resource Management
 &lt;/h2>&lt;p>RAII uses stack-based objects and destructors to effectively manage system resources (including heap memory). For objects created with new inside stack scope, they should be wrapped in a class to ensure automatic destruction and resource release when the function returns.&lt;/p>
-&lt;p>Note: For any new-allocated objects on the stack, they should be wrapped in a class to ensure automatic cleanup through the destructor when going out of scope.&lt;/p></description></item><item><title>C++ Value Categories and Semantics</title><link>/p/c-value-categories-and-semantics/</link><pubDate>Wed, 22 Feb 2023 12:18:59 +0000</pubDate><guid>/p/c-value-categories-and-semantics/</guid><description>&lt;p>&lt;img src="/p/c-value-categories-and-semantics/image.png"
+&lt;p>Note: For any new-allocated objects on the stack, they should be wrapped in a class to ensure automatic cleanup through the destructor when going out of scope.&lt;/p></description></item><item><title>C++ Value Categories and Semantics</title><link>https://vulpsecula.com/p/c-value-categories-and-semantics/</link><pubDate>Wed, 22 Feb 2023 12:18:59 +0000</pubDate><guid>https://vulpsecula.com/p/c-value-categories-and-semantics/</guid><description>&lt;p>&lt;img src="https://vulpsecula.com/p/c-value-categories-and-semantics/image.png"
 width="768"
 height="830"
-srcset="/p/c-value-categories-and-semantics/image_hu_f09bd6304aee272d.png 480w, /p/c-value-categories-and-semantics/image_hu_69ed6a393fadeb8f.png 1024w"
+srcset="https://vulpsecula.com/p/c-value-categories-and-semantics/image_hu_f09bd6304aee272d.png 480w, https://vulpsecula.com/p/c-value-categories-and-semantics/image_hu_69ed6a393fadeb8f.png 1024w"
 loading="lazy"
 alt="image.png"
 class="gallery-image"

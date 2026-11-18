@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Technical Notes</title><link>/</link><description>Recent content on Technical Notes</description><generator>Hugo -- gohugo.io</generator><language>en-au</language><lastBuildDate>Fri, 10 Jan 2025 10:03:05 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml"/><item><title>IoT Project: Infusion Monitoring</title><link>/p/iot-project-infusion-monitoring/</link><pubDate>Fri, 10 Jan 2025 10:03:05 +0000</pubDate><guid>/p/iot-project-infusion-monitoring/</guid><description>&lt;p>This project combines hardware sensors and a web dashboard to monitor data from medical instruments. This article focuses on the dashboard and its APIs.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Technical Notes</title><link>https://vulpsecula.com/</link><description>Recent content on Technical Notes</description><generator>Hugo -- gohugo.io</generator><language>en-au</language><lastBuildDate>Fri, 10 Jan 2025 10:03:05 +0000</lastBuildDate><atom:link href="https://vulpsecula.com/index.xml" rel="self" type="application/rss+xml"/><item><title>IoT Project: Infusion Monitoring</title><link>https://vulpsecula.com/p/iot-project-infusion-monitoring/</link><pubDate>Fri, 10 Jan 2025 10:03:05 +0000</pubDate><guid>https://vulpsecula.com/p/iot-project-infusion-monitoring/</guid><description>&lt;p>This project combines hardware sensors and a web dashboard to monitor data from medical instruments. This article focuses on the dashboard and its APIs.&lt;/p>
 &lt;h2 id="system-architecture">System Architecture
 &lt;/h2>&lt;p>The hardware monitors infusion bags. Also considering the requirements for high hardware scalability and low power consumption, the specific hardware configuration is as follows:&lt;/p>
 &lt;table>
@@ -36,10 +36,10 @@
 &lt;/tbody>
 &lt;/table>
 &lt;p>The hardware structure after assembly and the functions of each component are shown in the diagram below:&lt;/p>
-&lt;p>&lt;img src="/p/iot-project-infusion-monitoring/hardware.png"
+&lt;p>&lt;img src="https://vulpsecula.com/p/iot-project-infusion-monitoring/hardware.png"
 width="3537"
 height="1824"
-srcset="/p/iot-project-infusion-monitoring/hardware_hu_f421c2e8404ce1ab.png 480w, /p/iot-project-infusion-monitoring/hardware_hu_d2d65b7e245550db.png 1024w"
+srcset="https://vulpsecula.com/p/iot-project-infusion-monitoring/hardware_hu_f421c2e8404ce1ab.png 480w, https://vulpsecula.com/p/iot-project-infusion-monitoring/hardware_hu_d2d65b7e245550db.png 1024w"
 loading="lazy"
 alt="hardwares"
 class="gallery-image"
@@ -47,10 +47,10 @@ data-flex-grow="193"
 data-flex-basis="465px"
 >&lt;/p>
 &lt;p>In this project, we primarily used the MQTT protocol for communication, with all communication data stored in InfluxDB. Ideally, these services would be deployed on hospital servers. Following a client/server (C/S) architecture, the topic-based features of MQTT enable a convenient management model for different departments and floors.&lt;/p>
-&lt;p>&lt;img src="/p/iot-project-infusion-monitoring/structure.png"
+&lt;p>&lt;img src="https://vulpsecula.com/p/iot-project-infusion-monitoring/structure.png"
 width="721"
 height="591"
-srcset="/p/iot-project-infusion-monitoring/structure_hu_726b32ddb0828379.png 480w, /p/iot-project-infusion-monitoring/structure_hu_45b94421a8b87d19.png 1024w"
+srcset="https://vulpsecula.com/p/iot-project-infusion-monitoring/structure_hu_726b32ddb0828379.png 480w, https://vulpsecula.com/p/iot-project-infusion-monitoring/structure_hu_45b94421a8b87d19.png 1024w"
 loading="lazy"
 alt="structure"
 class="gallery-image"
@@ -82,10 +82,10 @@ data-flex-basis="292px"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>&lt;img src="/p/iot-project-infusion-monitoring/system.png"
+&lt;/div>&lt;p>&lt;img src="https://vulpsecula.com/p/iot-project-infusion-monitoring/system.png"
 width="1920"
 height="1080"
-srcset="/p/iot-project-infusion-monitoring/system_hu_789ef25596b85145.png 480w, /p/iot-project-infusion-monitoring/system_hu_e8ea0bf8ba4613fb.png 1024w"
+srcset="https://vulpsecula.com/p/iot-project-infusion-monitoring/system_hu_789ef25596b85145.png 480w, https://vulpsecula.com/p/iot-project-infusion-monitoring/system_hu_e8ea0bf8ba4613fb.png 1024w"
 loading="lazy"
 alt="system"
 class="gallery-image"
@@ -93,10 +93,10 @@ data-flex-grow="177"
 data-flex-basis="426px"
 >&lt;/p>
 &lt;h2 id="software-usage">Software usage
-&lt;/h2>&lt;p>&lt;img src="/p/iot-project-infusion-monitoring/flowchart.png"
+&lt;/h2>&lt;p>&lt;img src="https://vulpsecula.com/p/iot-project-infusion-monitoring/flowchart.png"
 width="1200"
 height="950"
-srcset="/p/iot-project-infusion-monitoring/flowchart_hu_320fb419f1c159a8.png 480w, /p/iot-project-infusion-monitoring/flowchart_hu_db3ffa36d252b1d8.png 1024w"
+srcset="https://vulpsecula.com/p/iot-project-infusion-monitoring/flowchart_hu_320fb419f1c159a8.png 480w, https://vulpsecula.com/p/iot-project-infusion-monitoring/flowchart_hu_db3ffa36d252b1d8.png 1024w"
 loading="lazy"
 alt="flowchart"
 class="gallery-image"
@@ -106,10 +106,10 @@ data-flex-basis="303px"
 &lt;h3 id="connecting">Connecting
 &lt;/h3>&lt;p>Because the dashboard application is hosted on the Vercel platform, if you want to set up your own version, you may need to provide your own environment variable &lt;code>MQTT_BROKER_URL&lt;/code>.&lt;/p>
 &lt;p>In the application, simply input the patient’s monitoring ID and reconnect. If logging in as hospital staff, you need to enter the corresponding administrator username and password in the &lt;strong>Advanced Settings&lt;/strong>. Note these staff credentials need to be preconfigured in Mosquitto. When logged in as an staff, the topic used will be private, and there will be permission to modify the configuration of the ESP32 hardware, not just limited to the web app side.&lt;/p>
-&lt;p>&lt;img src="/p/iot-project-infusion-monitoring/connect.png"
+&lt;p>&lt;img src="https://vulpsecula.com/p/iot-project-infusion-monitoring/connect.png"
 width="834"
 height="434"
-srcset="/p/iot-project-infusion-monitoring/connect_hu_bf22a9b63c0fe73.png 480w, /p/iot-project-infusion-monitoring/connect_hu_eab51ebb0169b2cd.png 1024w"
+srcset="https://vulpsecula.com/p/iot-project-infusion-monitoring/connect_hu_bf22a9b63c0fe73.png 480w, https://vulpsecula.com/p/iot-project-infusion-monitoring/connect_hu_eab51ebb0169b2cd.png 1024w"
 loading="lazy"
 alt="connect"
 class="gallery-image"
@@ -119,15 +119,15 @@ data-flex-basis="461px"
 &lt;p>These values will be cached in local storage to avoid repeated inputs.&lt;/p>
 &lt;h3 id="monitoring">Monitoring
 &lt;/h3>&lt;p>For regular patient users, they can monitor commonly used data via the dashboard and adjust the local Alert Threshold by dragging the slider.&lt;/p>
-&lt;figure>&lt;img src="/p/iot-project-infusion-monitoring/dashboard.png"
+&lt;figure>&lt;img src="https://vulpsecula.com/p/iot-project-infusion-monitoring/dashboard.png"
 alt="dashboard" width="300px" height="auto">
 &lt;/figure>
 &lt;p>When the remaining IV bag capacity falls below the alert threshold, both the app and the ESP32 emit a warning sound to alert the user. Clicking the Stop button will stop the app’s warning sound.&lt;/p>
 &lt;p>At the same time, the ESP32 board will send the data to the InfluxDB for logging.&lt;/p>
-&lt;p>&lt;img src="/p/iot-project-infusion-monitoring/data.png"
+&lt;p>&lt;img src="https://vulpsecula.com/p/iot-project-infusion-monitoring/data.png"
 width="1632"
 height="1858"
-srcset="/p/iot-project-infusion-monitoring/data_hu_bfb8ecb19a24f3ab.png 480w, /p/iot-project-infusion-monitoring/data_hu_c4c5484c5c00a509.png 1024w"
+srcset="https://vulpsecula.com/p/iot-project-infusion-monitoring/data_hu_bfb8ecb19a24f3ab.png 480w, https://vulpsecula.com/p/iot-project-infusion-monitoring/data_hu_c4c5484c5c00a509.png 1024w"
 loading="lazy"
 alt="data"
 class="gallery-image"
@@ -135,7 +135,7 @@ data-flex-grow="87"
 data-flex-basis="210px"
 >&lt;/p>
 &lt;h2 id="scalability">Scalability
-&lt;/h2>&lt;p>Additionally, since the application is developed using &lt;strong>Next.js&lt;/strong>, it could share application logic with a React Native mobile app.&lt;/p></description></item><item><title>Python Formatter setting in VSCode</title><link>/p/python-formatter-setting-in-vscode/</link><pubDate>Tue, 02 Apr 2024 15:47:59 +0000</pubDate><guid>/p/python-formatter-setting-in-vscode/</guid><description>&lt;p>While using Black Formatter in VSCode, we can set the maximum line length to prevent some code to be wrapped lines by reformat operation.&lt;/p>
+&lt;/h2>&lt;p>Additionally, since the application is developed using &lt;strong>Next.js&lt;/strong>, it could share application logic with a React Native mobile app.&lt;/p></description></item><item><title>Python Formatter setting in VSCode</title><link>https://vulpsecula.com/p/python-formatter-setting-in-vscode/</link><pubDate>Tue, 02 Apr 2024 15:47:59 +0000</pubDate><guid>https://vulpsecula.com/p/python-formatter-setting-in-vscode/</guid><description>&lt;p>While using Black Formatter in VSCode, we can set the maximum line length to prevent some code to be wrapped lines by reformat operation.&lt;/p>
 &lt;p>Add these in setting.json.&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -156,10 +156,10 @@ data-flex-basis="210px"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>Before:&lt;/p>
-&lt;p>&lt;img src="/p/python-formatter-setting-in-vscode/image.png"
+&lt;p>&lt;img src="https://vulpsecula.com/p/python-formatter-setting-in-vscode/image.png"
 width="1236"
 height="197"
-srcset="/p/python-formatter-setting-in-vscode/image_hu_4c4ba05ce20f282f.png 480w, /p/python-formatter-setting-in-vscode/image_hu_903e9724fd954d4b.png 1024w"
+srcset="https://vulpsecula.com/p/python-formatter-setting-in-vscode/image_hu_4c4ba05ce20f282f.png 480w, https://vulpsecula.com/p/python-formatter-setting-in-vscode/image_hu_903e9724fd954d4b.png 1024w"
 loading="lazy"
 alt="before"
 class="gallery-image"
@@ -167,10 +167,10 @@ data-flex-grow="627"
 data-flex-basis="1505px"
 >&lt;/p>
 &lt;p>After:&lt;/p>
-&lt;p>&lt;img src="/p/python-formatter-setting-in-vscode/image-1.png"
+&lt;p>&lt;img src="https://vulpsecula.com/p/python-formatter-setting-in-vscode/image-1.png"
 width="1671"
 height="104"
-srcset="/p/python-formatter-setting-in-vscode/image-1_hu_89d89e52abbaa125.png 480w, /p/python-formatter-setting-in-vscode/image-1_hu_18af0c807d217e89.png 1024w"
+srcset="https://vulpsecula.com/p/python-formatter-setting-in-vscode/image-1_hu_89d89e52abbaa125.png 480w, https://vulpsecula.com/p/python-formatter-setting-in-vscode/image-1_hu_18af0c807d217e89.png 1024w"
 loading="lazy"
 alt="after"
 class="gallery-image"
@@ -180,7 +180,7 @@ data-flex-basis="3856px"
 &lt;p>About the best line length number, refer to &lt;a class="link" href="https://black.readthedocs.io/en/stable/the_black_code_style/current_style.html#line-length" target="_blank" rel="noopener"
 >Black document&lt;/a>.&lt;/p>
 &lt;blockquote>
-&lt;p>In general, 90-ish seems like the wise choice.&lt;/p>&lt;/blockquote></description></item><item><title>Template Type Deduction</title><link>/p/template-type-deduction/</link><pubDate>Sun, 12 Mar 2023 12:18:59 +0000</pubDate><guid>/p/template-type-deduction/</guid><description>&lt;h2 id="first-lets-distinguish-different-cases-of-const">First, let&amp;rsquo;s distinguish different cases of const
+&lt;p>In general, 90-ish seems like the wise choice.&lt;/p>&lt;/blockquote></description></item><item><title>Template Type Deduction</title><link>https://vulpsecula.com/p/template-type-deduction/</link><pubDate>Sun, 12 Mar 2023 12:18:59 +0000</pubDate><guid>https://vulpsecula.com/p/template-type-deduction/</guid><description>&lt;h2 id="first-lets-distinguish-different-cases-of-const">First, let&amp;rsquo;s distinguish different cases of const
 &lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -385,7 +385,7 @@ data-flex-basis="3856px"
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>This type includes the array&amp;rsquo;s size. In this example, &lt;code>T&lt;/code> is deduced as &lt;code>const char[13]&lt;/code>, and the type of &lt;code>f&lt;/code>&amp;rsquo;s parameter (reference to this array) is &lt;code>const char (&amp;amp;)[13]&lt;/code>&lt;/p>
-&lt;p>But since you&amp;rsquo;re writing in C++, it&amp;rsquo;s recommended to use array instead&amp;hellip;.&lt;/p></description></item><item><title>C++ RAII</title><link>/p/c-raii/</link><pubDate>Wed, 22 Feb 2023 12:18:59 +0000</pubDate><guid>/p/c-raii/</guid><description>&lt;p>RAII(Resource Acquisition Is Initialization) is a C++ programming idiom that ties resource management to object lifetime.&lt;/p>
+&lt;p>But since you&amp;rsquo;re writing in C++, it&amp;rsquo;s recommended to use array instead&amp;hellip;.&lt;/p></description></item><item><title>C++ RAII</title><link>https://vulpsecula.com/p/c-raii/</link><pubDate>Wed, 22 Feb 2023 12:18:59 +0000</pubDate><guid>https://vulpsecula.com/p/c-raii/</guid><description>&lt;p>RAII(Resource Acquisition Is Initialization) is a C++ programming idiom that ties resource management to object lifetime.&lt;/p>
 &lt;h2 id="when-objects-should-not-be-stack-allocated">When Objects Should Not Be Stack-Allocated
 &lt;/h2>&lt;p>Objects should be heap-allocated when:&lt;/p>
 &lt;ul>
@@ -395,10 +395,10 @@ data-flex-basis="3856px"
 &lt;/ul>
 &lt;h2 id="resource-management">Resource Management
 &lt;/h2>&lt;p>RAII uses stack-based objects and destructors to effectively manage system resources (including heap memory). For objects created with new inside stack scope, they should be wrapped in a class to ensure automatic destruction and resource release when the function returns.&lt;/p>
-&lt;p>Note: For any new-allocated objects on the stack, they should be wrapped in a class to ensure automatic cleanup through the destructor when going out of scope.&lt;/p></description></item><item><title>C++ Value Categories and Semantics</title><link>/p/c-value-categories-and-semantics/</link><pubDate>Wed, 22 Feb 2023 12:18:59 +0000</pubDate><guid>/p/c-value-categories-and-semantics/</guid><description>&lt;p>&lt;img src="/p/c-value-categories-and-semantics/image.png"
+&lt;p>Note: For any new-allocated objects on the stack, they should be wrapped in a class to ensure automatic cleanup through the destructor when going out of scope.&lt;/p></description></item><item><title>C++ Value Categories and Semantics</title><link>https://vulpsecula.com/p/c-value-categories-and-semantics/</link><pubDate>Wed, 22 Feb 2023 12:18:59 +0000</pubDate><guid>https://vulpsecula.com/p/c-value-categories-and-semantics/</guid><description>&lt;p>&lt;img src="https://vulpsecula.com/p/c-value-categories-and-semantics/image.png"
 width="768"
 height="830"
-srcset="/p/c-value-categories-and-semantics/image_hu_f09bd6304aee272d.png 480w, /p/c-value-categories-and-semantics/image_hu_69ed6a393fadeb8f.png 1024w"
+srcset="https://vulpsecula.com/p/c-value-categories-and-semantics/image_hu_f09bd6304aee272d.png 480w, https://vulpsecula.com/p/c-value-categories-and-semantics/image_hu_69ed6a393fadeb8f.png 1024w"
 loading="lazy"
 alt="image.png"
 class="gallery-image"
@@ -440,4 +440,4 @@ data-flex-basis="222px"
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
-&lt;p>C++ primarily uses value semantics - parameters are passed by value (copied) by default.&lt;/p></description></item><item><title>Archives</title><link>/archives/</link><pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate><guid>/archives/</guid><description/></item><item><title>Search</title><link>/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/search/</guid><description/></item></channel></rss>
+&lt;p>C++ primarily uses value semantics - parameters are passed by value (copied) by default.&lt;/p></description></item><item><title>Archives</title><link>https://vulpsecula.com/archives/</link><pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate><guid>https://vulpsecula.com/archives/</guid><description/></item><item><title>Search</title><link>https://vulpsecula.com/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vulpsecula.com/search/</guid><description/></item></channel></rss>
