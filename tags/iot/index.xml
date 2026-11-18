@@ -1,6 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Iot on Zeke</title><link>https://vulpsecula.com/tags/iot/</link><description>Recent content in Iot on Zeke</description><generator>Hugo -- gohugo.io</generator><language>en-au</language><lastBuildDate>Fri, 10 Jan 2025 10:03:05 +0000</lastBuildDate><atom:link href="https://vulpsecula.com/tags/iot/index.xml" rel="self" type="application/rss+xml"/><item><title>IoT Project: Infusion Monitoring</title><link>https://vulpsecula.com/p/iot-project-infusion-monitoring/</link><pubDate>Fri, 10 Jan 2025 10:03:05 +0000</pubDate><guid>https://vulpsecula.com/p/iot-project-infusion-monitoring/</guid><description>&lt;p>This project combines hardware sensors and a web dashboard to monitor data from medical instruments. This article focuses on the dashboard and its APIs.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Iot on Zeke</title><link>https://vulpsecula.com/tags/iot/</link><description>Recent content in Iot on Zeke</description><generator>Hugo -- gohugo.io</generator><language>en-au</language><lastBuildDate>Fri, 10 Jan 2025 10:03:05 +0000</lastBuildDate><atom:link href="https://vulpsecula.com/tags/iot/index.xml" rel="self" type="application/rss+xml"/><item><title>IoT Project: Vital Track</title><link>https://vulpsecula.com/p/iot-project-vital-track/</link><pubDate>Fri, 10 Jan 2025 10:03:05 +0000</pubDate><guid>https://vulpsecula.com/p/iot-project-vital-track/</guid><description>&lt;p>This post introduce a uni project at 2024 S2 in which we designed and implemented a full-stack medical information monitoring system combining hardware and software. The final product utilizes various sensors to monitor data from medical instruments and consolidates the information into a dashboard web application for convenient viewing. The source code is open-sourced and available on &lt;a class="link" href="https://github.com/vulpsecula/CITS5506-IoT" target="_blank" rel="noopener"
+>GitHub&lt;/a>.&lt;/p>
+&lt;p>My primary responsibilities in this project included developing the dashboard application and designing the APIs. As such, this article will primarily focus on the software development aspects of the project:&lt;/p>
 &lt;h2 id="system-architecture">System Architecture
-&lt;/h2>&lt;p>The hardware monitors infusion bags. Also considering the requirements for high hardware scalability and low power consumption, the specific hardware configuration is as follows:&lt;/p>
+&lt;/h2>&lt;p>Due to budget constraints for the school project, we only used infusion bag sensors for the hardware component. Also considering the requirements for high hardware scalability and low power consumption, the specific hardware configuration is as follows:&lt;/p>
 &lt;table>
 &lt;thead>
 &lt;tr>
@@ -36,10 +38,10 @@
 &lt;/tbody>
 &lt;/table>
 &lt;p>The hardware structure after assembly and the functions of each component are shown in the diagram below:&lt;/p>
-&lt;p>&lt;img src="https://vulpsecula.com/p/iot-project-infusion-monitoring/hardware.png"
+&lt;p>&lt;img src="https://vulpsecula.com/p/iot-project-vital-track/hardware.png"
 width="3537"
 height="1824"
-srcset="https://vulpsecula.com/p/iot-project-infusion-monitoring/hardware_hu_f421c2e8404ce1ab.png 480w, https://vulpsecula.com/p/iot-project-infusion-monitoring/hardware_hu_d2d65b7e245550db.png 1024w"
+srcset="https://vulpsecula.com/p/iot-project-vital-track/hardware_hu_a9b797dbe821a7a2.png 480w, https://vulpsecula.com/p/iot-project-vital-track/hardware_hu_61b64a582f4adeaa.png 1024w"
 loading="lazy"
 alt="hardwares"
 class="gallery-image"
@@ -47,10 +49,10 @@ data-flex-grow="193"
 data-flex-basis="465px"
 >&lt;/p>
 &lt;p>In this project, we primarily used the MQTT protocol for communication, with all communication data stored in InfluxDB. Ideally, these services would be deployed on hospital servers. Following a client/server (C/S) architecture, the topic-based features of MQTT enable a convenient management model for different departments and floors.&lt;/p>
-&lt;p>&lt;img src="https://vulpsecula.com/p/iot-project-infusion-monitoring/structure.png"
+&lt;p>&lt;img src="https://vulpsecula.com/p/iot-project-vital-track/structure.png"
 width="721"
 height="591"
-srcset="https://vulpsecula.com/p/iot-project-infusion-monitoring/structure_hu_726b32ddb0828379.png 480w, https://vulpsecula.com/p/iot-project-infusion-monitoring/structure_hu_45b94421a8b87d19.png 1024w"
+srcset="https://vulpsecula.com/p/iot-project-vital-track/structure_hu_6deada31529d6eef.png 480w, https://vulpsecula.com/p/iot-project-vital-track/structure_hu_b9eb833931e69e77.png 1024w"
 loading="lazy"
 alt="structure"
 class="gallery-image"
@@ -82,10 +84,12 @@ data-flex-basis="292px"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>&lt;img src="https://vulpsecula.com/p/iot-project-infusion-monitoring/system.png"
+&lt;/div>&lt;p>For more detailed Mosquitto configuration, refer to &lt;a class="link" href="https://github.com/vulpsecula/CITS5506-IoT?tab=readme-ov-file#mqtt-configuration" target="_blank" rel="noopener"
+>GitHub MQTT Configuration&lt;/a>.&lt;/p>
+&lt;p>&lt;img src="https://vulpsecula.com/p/iot-project-vital-track/system.png"
 width="1920"
 height="1080"
-srcset="https://vulpsecula.com/p/iot-project-infusion-monitoring/system_hu_789ef25596b85145.png 480w, https://vulpsecula.com/p/iot-project-infusion-monitoring/system_hu_e8ea0bf8ba4613fb.png 1024w"
+srcset="https://vulpsecula.com/p/iot-project-vital-track/system_hu_107dd2ad8b42372c.png 480w, https://vulpsecula.com/p/iot-project-vital-track/system_hu_e58fc0a5ef5a8cb4.png 1024w"
 loading="lazy"
 alt="system"
 class="gallery-image"
@@ -93,10 +97,10 @@ data-flex-grow="177"
 data-flex-basis="426px"
 >&lt;/p>
 &lt;h2 id="software-usage">Software usage
-&lt;/h2>&lt;p>&lt;img src="https://vulpsecula.com/p/iot-project-infusion-monitoring/flowchart.png"
+&lt;/h2>&lt;p>&lt;img src="https://vulpsecula.com/p/iot-project-vital-track/flowchart.png"
 width="1200"
 height="950"
-srcset="https://vulpsecula.com/p/iot-project-infusion-monitoring/flowchart_hu_320fb419f1c159a8.png 480w, https://vulpsecula.com/p/iot-project-infusion-monitoring/flowchart_hu_db3ffa36d252b1d8.png 1024w"
+srcset="https://vulpsecula.com/p/iot-project-vital-track/flowchart_hu_bf4518559457a0b3.png 480w, https://vulpsecula.com/p/iot-project-vital-track/flowchart_hu_a7b3c13f090b0c69.png 1024w"
 loading="lazy"
 alt="flowchart"
 class="gallery-image"
@@ -105,11 +109,21 @@ data-flex-basis="303px"
 >&lt;/p>
 &lt;h3 id="connecting">Connecting
 &lt;/h3>&lt;p>Because the dashboard application is hosted on the Vercel platform, if you want to set up your own version, you may need to provide your own environment variable &lt;code>MQTT_BROKER_URL&lt;/code>.&lt;/p>
+&lt;p>&lt;img src="https://vulpsecula.com/p/iot-project-vital-track/env.png"
+width="1858"
+height="202"
+srcset="https://vulpsecula.com/p/iot-project-vital-track/env_hu_a5bca3cb6ad67b49.png 480w, https://vulpsecula.com/p/iot-project-vital-track/env_hu_bbac16390b1aa6df.png 1024w"
+loading="lazy"
+alt="env"
+class="gallery-image"
+data-flex-grow="919"
+data-flex-basis="2207px"
+>&lt;/p>
 &lt;p>In the application, simply input the patient’s monitoring ID and reconnect. If logging in as hospital staff, you need to enter the corresponding administrator username and password in the &lt;strong>Advanced Settings&lt;/strong>. Note these staff credentials need to be preconfigured in Mosquitto. When logged in as an staff, the topic used will be private, and there will be permission to modify the configuration of the ESP32 hardware, not just limited to the web app side.&lt;/p>
-&lt;p>&lt;img src="https://vulpsecula.com/p/iot-project-infusion-monitoring/connect.png"
+&lt;p>&lt;img src="https://vulpsecula.com/p/iot-project-vital-track/connect.png"
 width="834"
 height="434"
-srcset="https://vulpsecula.com/p/iot-project-infusion-monitoring/connect_hu_bf22a9b63c0fe73.png 480w, https://vulpsecula.com/p/iot-project-infusion-monitoring/connect_hu_eab51ebb0169b2cd.png 1024w"
+srcset="https://vulpsecula.com/p/iot-project-vital-track/connect_hu_7aace15eb53cc6b.png 480w, https://vulpsecula.com/p/iot-project-vital-track/connect_hu_bf3b13913f2b13ae.png 1024w"
 loading="lazy"
 alt="connect"
 class="gallery-image"
@@ -119,15 +133,25 @@ data-flex-basis="461px"
 &lt;p>These values will be cached in local storage to avoid repeated inputs.&lt;/p>
 &lt;h3 id="monitoring">Monitoring
 &lt;/h3>&lt;p>For regular patient users, they can monitor commonly used data via the dashboard and adjust the local Alert Threshold by dragging the slider.&lt;/p>
-&lt;figure>&lt;img src="https://vulpsecula.com/p/iot-project-infusion-monitoring/dashboard.png"
+&lt;figure>&lt;img src="https://vulpsecula.com/p/iot-project-vital-track/dashboard.png"
 alt="dashboard" width="300px" height="auto">
 &lt;/figure>
 &lt;p>When the remaining IV bag capacity falls below the alert threshold, both the app and the ESP32 emit a warning sound to alert the user. Clicking the Stop button will stop the app’s warning sound.&lt;/p>
+&lt;p>&lt;img src="https://vulpsecula.com/p/iot-project-vital-track/warning.png"
+width="3107"
+height="1682"
+srcset="https://vulpsecula.com/p/iot-project-vital-track/warning_hu_647c336b032cb7c5.png 480w, https://vulpsecula.com/p/iot-project-vital-track/warning_hu_4624e94288d6756f.png 1024w"
+loading="lazy"
+alt="warning"
+class="gallery-image"
+data-flex-grow="184"
+data-flex-basis="443px"
+>&lt;/p>
 &lt;p>At the same time, the ESP32 board will send the data to the InfluxDB for logging.&lt;/p>
-&lt;p>&lt;img src="https://vulpsecula.com/p/iot-project-infusion-monitoring/data.png"
+&lt;p>&lt;img src="https://vulpsecula.com/p/iot-project-vital-track/data.png"
 width="1632"
 height="1858"
-srcset="https://vulpsecula.com/p/iot-project-infusion-monitoring/data_hu_bfb8ecb19a24f3ab.png 480w, https://vulpsecula.com/p/iot-project-infusion-monitoring/data_hu_c4c5484c5c00a509.png 1024w"
+srcset="https://vulpsecula.com/p/iot-project-vital-track/data_hu_b7ef947cb4db3f76.png 480w, https://vulpsecula.com/p/iot-project-vital-track/data_hu_bdfd49f36e73328.png 1024w"
 loading="lazy"
 alt="data"
 class="gallery-image"
@@ -135,4 +159,5 @@ data-flex-grow="87"
 data-flex-basis="210px"
 >&lt;/p>
 &lt;h2 id="scalability">Scalability
-&lt;/h2>&lt;p>Additionally, since the application is developed using &lt;strong>Next.js&lt;/strong>, it could share application logic with a React Native mobile app.&lt;/p></description></item></channel></rss>
+&lt;/h2>&lt;p>Additionally, since the application is developed using &lt;strong>Next.js&lt;/strong>, it can be conveniently converted into a React Native app for use on mobile platforms such as Apple devices. Here is a short demonstration video: &lt;a class="link" href="https://youtube.com/shorts/qPmOdOjlymg?si=D9SlY9jT2-UZ5Gxz" target="_blank" rel="noopener"
+>https://youtube.com/shorts/qPmOdOjlymg?si=D9SlY9jT2-UZ5Gxz&lt;/a>.&lt;/p></description></item></channel></rss>
