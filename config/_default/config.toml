@@ -1,5 +1,4 @@
-# Set HUGO_BASEURL at deploy time if absolute URLs are needed.
-baseurl = "/"
+baseurl = "https://vulpsecula.com/"
 languageCode = "en-au"
 title = "Technical Notes"
 
