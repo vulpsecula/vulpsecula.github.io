@@ -1,6 +1,6 @@
 baseurl = "https://vulpsecula.com/"
 languageCode = "en-au"
-title = "Technical Notes"
+title = "Zeke"
 
 [pagination]
     paginate = 5
