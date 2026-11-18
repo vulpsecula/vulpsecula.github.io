@@ -1,4 +1,4 @@
-# Example main menu entry
+# Configure main menu and social menu
 #[[main]]
 #identifier = "home"
 #name = "Home"
@@ -6,3 +6,12 @@
 #[main.params]
 #icon = "home"
 #newtab = true
+
+[[social]]
+identifier = "github"
+name = "GitHub"
+url = "https://github.com/vulpsecula"
+weight = 1
+
+[social.params]
+icon = "brand-github"
